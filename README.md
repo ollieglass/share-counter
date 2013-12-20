@@ -4,6 +4,9 @@
 
 Returns google plus shares for any url
 
+[![I know, rite?](http://gifs.gifbin.com/052011/1304618376_tumbleweed-gif.gif)](http://gifs.gifbin.com/052011/1304618376_tumbleweed-gif.gif)
+
+
 
 ## Installation
 
