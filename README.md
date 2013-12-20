@@ -1,18 +1,18 @@
 [![Gem Version](https://badge.fury.io/rb/share-counter.png)](http://badge.fury.io/rb/share-counter)
 
-== Overview
+# ShareCounter
 
 Returns google plus shares for any url
 
 
-== Installation
+## Installation
 
 ```
 gem install share-counter
 ```
 
 
-== Usage
+## Usage
 
 ```
 url = "http://twitter.com"
