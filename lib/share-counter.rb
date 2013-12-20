@@ -7,26 +7,27 @@ class ShareCounter
   require 'nokogiri'
   require 'open-uri'
 
-  # def self.twitter url, raise_exceptions = false
-  #   try("twitter", url, raise_exceptions) {
-  #     extract_count from_json( "http://urls.api.twitter.com/1/urls/count.json", :url => url),
-  #       :selector => "count"
-  #   }
-  # end
+  def self.twitter url
+    url = "http://urls.api.twitter.com/1/urls/count.json?url=" + URI::encode(url)
+    html = RestClient.get url
+    return JSON.parse(html)['count']
+  end
 
-  # def self.facebook url, raise_exceptions = false
-  #   try("facebook", url, raise_exceptions) {
-  #     extract_count from_json("http://api.facebook.com/restserver.php", :v => "1.0", :method => "links.getStats",
-  #      :urls => url, :callback => "fb_sharepro_render", :format => "json" ), :selector => "total_count"
-  #   }
-  # end
+  def self.facebook url
+    url = 'https://api.facebook.com/method/fql.query?format=json&query=select like_count from link_stat where url="' + url + '"'
+    url = URI::encode(url)
+    html = RestClient.get url
+    return JSON.parse(html)[0]['like_count']
+  end
 
-  # def self.linkedin url, raise_exceptions = false
-  #   try("linkedin", url, raise_exceptions) {
-  #     extract_count from_json("http://www.linkedin.com/cws/share-count",
-  #       :url => url, :callback => "IN.Tags.Share.handleCount" ), :selector => "count"
-  #   }
-  # end
+  def self.linkedin url
+    url = "http://www.linkedin.com/countserv/count/share?url=" + URI::encode(url)
+    html = RestClient.get url
+
+    callback = "IN.Tags.Share.handleCount"
+    html = html.gsub(/\A\/\*\*\/\s+/, "").gsub(/^(.*);+\n*$/, "\\1").gsub(/^#{callback}\((.*)\)$/, "\\1")
+    return JSON.parse(html)['count']
+  end
 
   def self.googleplus url
     begin
@@ -36,7 +37,6 @@ class ShareCounter
     rescue Exception => e
       puts e
     end
-
   end
 
   # def self.all url
@@ -49,3 +49,12 @@ class ShareCounter
   # end
 
 end
+
+
+# url = "http://makeshift.io/"
+# puts ShareCounter.googleplus url
+# puts ShareCounter.linkedin url
+# puts ShareCounter.twitter url
+# puts ShareCounter.facebook url
+
+
