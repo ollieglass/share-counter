@@ -15,6 +15,9 @@ gem install share-counter
 ## Usage
 
 ```
-url = "http://twitter.com"
-googleplus_shares = ShareCounter.googleplus url
+2.0.0-p353 :002 > require 'share-counter'
+2.0.0-p353 :002 > url = 'http://makeshift.io'
+ => "http://makeshift.io"
+2.0.0-p353 :003 > ShareCounter.googleplus url
+ => 29
 ```
