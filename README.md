@@ -4,6 +4,9 @@
 
 Returns google plus shares for any url
 
+[![I know, rite?](http://gifs.gifbin.com/052011/1304618376_tumbleweed-gif.gif)](http://gifs.gifbin.com/052011/1304618376_tumbleweed-gif.gif)
+
+
 
 ## Installation
 
@@ -14,7 +17,10 @@ gem install share-counter
 
 ## Usage
 
-```
-url = "http://twitter.com"
-googleplus_shares = ShareCounter.googleplus url
+```ruby
+2.0.0-p353 :002 > require 'share-counter'
+2.0.0-p353 :002 > url = 'http://makeshift.io'
+ => "http://makeshift.io"
+2.0.0-p353 :003 > ShareCounter.googleplus url
+ => 29
 ```
