@@ -14,7 +14,7 @@ gem install share-counter
 
 ## Usage
 
-```
+```ruby
 2.0.0-p353 :002 > require 'share-counter'
 2.0.0-p353 :002 > url = 'http://makeshift.io'
  => "http://makeshift.io"
