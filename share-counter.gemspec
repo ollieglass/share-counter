@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'share-counter'
-  s.version     = '0.0.3'
+  s.version     = '0.0.4'
   s.date        = '2013-12-20'
   s.summary     = "ShareCounter"
   s.description = "Check how many times a page/URL has been shared on social networks and aggregators"

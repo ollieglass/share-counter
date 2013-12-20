@@ -11,7 +11,7 @@ class ShareCounter
     j = JSON.parse(html)
 
     unless j['data']['children'].empty?
-      return j['data']['children']['data']['score']
+      return j['data']['children'][0]['data']['score']
     else
       return 0
     end
