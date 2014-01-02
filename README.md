@@ -10,6 +10,7 @@ Returns google plus shares for any url
 
 **Update!** Now returns the Twitter, Facebook, LinkedIn and Reddit shares too. 
 
+[![A small thing in the desert](http://i.imgur.com/j0nCIxj.jpg)
 
 
 ## Installation
