@@ -8,7 +8,7 @@ Returns google plus shares for any url
 [![I know, rite?](http://gifs.gifbin.com/052011/1304618376_tumbleweed-gif.gif)](http://gifs.gifbin.com/052011/1304618376_tumbleweed-gif.gif)
 
 
-**Update!** Now returns the Twitter, Facebook, LinkedIn and Reddit shares too. 
+**Update!** Now returns the Twitter, Facebook, LinkedIn and Reddit shares too. And it's on [RubyGems](http://rubygems.org/gems/share-counter)
 
 [![A small thing in the desert](http://i.imgur.com/j0nCIxj.jpg)
 
