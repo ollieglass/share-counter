@@ -1,0 +1,15 @@
+GEM
+  specs:
+    mime-types (2.0)
+    mini_portile (0.5.2)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  nokogiri (~> 1.6.0)
+  rest-client (~> 1.6.7)
