@@ -7,6 +7,8 @@ Returns the Twitter, Facebook, LinkedIn, Google+ and Reddit shares for a link.
 
 Listed on [RubyGems](http://rubygems.org/gems/share-counter)
 
+Issue reports and pull requests welcome.
+
 
 ## Installation
 
