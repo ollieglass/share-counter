@@ -9,6 +9,8 @@ Listed on [RubyGems](http://rubygems.org/gems/share-counter)
 
 Issue reports and pull requests welcome.
 
+Spiritual successor to the [Share Counts](https://github.com/vitobotta/share_counts) gem.
+
 
 ## Installation
 
