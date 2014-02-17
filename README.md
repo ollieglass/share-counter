@@ -3,7 +3,16 @@
 # ShareCounter
 
 
-Returns the Twitter, Facebook, LinkedIn, Google+ and Reddit shares for a link.
+Returns the number of shares for a link from
+
+* Twitter
+* Facebook
+* LinkedIn
+* Google+
+* Reddit
+* Delicious
+* StumbleUpon
+* Pinterest
 
 Listed on [RubyGems](http://rubygems.org/gems/share-counter)
 
@@ -32,7 +41,7 @@ gem install share-counter
 # get specific networks
 2.0.0p353 :004 > counts = ShareCounter.selected url, [:facebook, :linkedin]
  => {:facebook=>5, :linkedin=>26}
- 
+
 # get one network
 2.0.0p353 :005 > ShareCounter.googleplus url
 29

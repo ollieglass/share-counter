@@ -39,19 +39,23 @@ class ShareCounter
 
   def self.delicious url
     html = make_request "http://feeds.delicious.com/v2/json/urlinfo/data", url: url
-    puts html
+    return JSON.parse(html)[0]['total_posts']
+    # puts html
     # return Nokogiri::HTML.parse(html).xpath('//*[@id="aggregateCount"]').text.to_i
   end
 
   def self.stumbleupon url
     html = make_request "http://www.stumbleupon.com/services/1.01/badge.getinfo", url: url
-    puts html
+    return JSON.parse(html)['result']['views']
+    # puts html
     # return Nokogiri::HTML.parse(html).xpath('//*[@id="aggregateCount"]').text.to_i
   end
 
   def self.pinterest url
     html = make_request "http://widgets.pinterest.com/v1/urls/count.json", url: url, source: 6
-    puts html
+    html.gsub! 'receiveCount(', ''
+    html.gsub! ')', ''
+    return JSON.parse(html)['count']
     # return Nokogiri::HTML.parse(html).xpath('//*[@id="aggregateCount"]').text.to_i
   end
 
