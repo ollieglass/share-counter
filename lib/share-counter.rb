@@ -40,7 +40,12 @@ class ShareCounter
 
   def self.delicious url
     html = make_request "http://feeds.delicious.com/v2/json/urlinfo/data", url: url
-    return JSON.parse(html)[0]['total_posts']
+    json = JSON.parse(html)
+    if json.empty?
+      return -1
+    else
+      return JSON.parse(html)[0]['total_posts']
+    end
   end
 
   def self.stumbleupon url
