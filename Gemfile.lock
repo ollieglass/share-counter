@@ -6,6 +6,7 @@ GEM
     mini_portile (0.5.2)
     nokogiri (1.6.1)
       mini_portile (~> 0.5.0)
+    rake (10.1.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rspec (3.1.0)
@@ -26,5 +27,6 @@ PLATFORMS
 
 DEPENDENCIES
   nokogiri (~> 1.6.0)
+  rake
   rest-client (~> 1.6.7)
   rspec (= 3.1.0)
