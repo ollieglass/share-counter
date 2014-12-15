@@ -1,6 +1,7 @@
 require 'share-counter/common'
 require 'nokogiri'
 require 'open-uri'
+require 'json'
 
 class ShareCounter
 

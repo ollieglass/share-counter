@@ -1,4 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/share-counter.png)](http://badge.fury.io/rb/share-counter)
+[![Code Climate](https://codeclimate.com/github/ollieglass/share-counter/badges/gpa.svg)](https://codeclimate.com/github/ollieglass/share-counter)
+[![Test Coverage](https://codeclimate.com/github/ollieglass/share-counter/badges/coverage.svg)](https://codeclimate.com/github/ollieglass/share-counter)
 
 # ShareCounter
 
@@ -16,7 +18,7 @@ Returns the number of shares for a link from
 
 Listed on [RubyGems](http://rubygems.org/gems/share-counter)
 
-Issue reports and pull requests welcome.
+Issue reports, feature requests and pull requests welcome.
 
 Spiritual successor to the [Share Counts](https://github.com/vitobotta/share_counts) gem.
 
