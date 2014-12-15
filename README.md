@@ -1,6 +1,7 @@
 [![Gem Version](https://badge.fury.io/rb/share-counter.png)](http://badge.fury.io/rb/share-counter)
 [![Code Climate](https://codeclimate.com/github/ollieglass/share-counter/badges/gpa.svg)](https://codeclimate.com/github/ollieglass/share-counter)
 [![Test Coverage](https://codeclimate.com/github/ollieglass/share-counter/badges/coverage.svg)](https://codeclimate.com/github/ollieglass/share-counter)
+[![Build Status](https://travis-ci.org/ollieglass/share-counter.svg?branch=master)](https://travis-ci.org/ollieglass/share-counter)
 
 # ShareCounter
 
