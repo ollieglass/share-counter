@@ -58,7 +58,7 @@ class ShareCounter
   # helpers - get all or selected networks
 
   def self.supported_networks
-    %w(reddit twitter facebook linkedin googleplus)
+    %w(reddit twitter facebook linkedin googleplus delicious stumbleupon pinterest)
   end
 
   def self.all url
