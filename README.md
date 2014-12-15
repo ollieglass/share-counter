@@ -34,18 +34,21 @@ gem install share-counter
 ## Usage
 
 ```ruby
-2.0.0p353 :001 > require 'share-counter'
-2.0.0p353 :002 > url = 'http://makeshift.io'
+
+2.1.1 :001 > require 'share-counter'
+2.1.1 :002 > url = 'http://rinse.fm'
 
 # get all
-2.0.0p353 :003 > counts = ShareCounter.all url
- => {:reddit=>0, :twitter=>108, :facebook=>5, :linkedin=>26, :googleplus=>29}
+2.1.1 :003 > counts = ShareCounter.all url
+ => {:reddit=>9, :twitter=>25042, :facebook=>37699, :linkedin=>154, :googleplus=>1, :delicious=>-1, :stumbleupon=>2087, :pinterest=>0}
+
+# note delicious count. -1 means an error prevented the count being retrieved
 
 # get specific networks
-2.0.0p353 :004 > counts = ShareCounter.selected url, [:facebook, :linkedin]
- => {:facebook=>5, :linkedin=>26}
+2.1.1 :004 > counts = ShareCounter.selected url, [:facebook, :linkedin]
+ => {:facebook=>37699, :linkedin=>154}
 
 # get one network
-2.0.0p353 :005 > ShareCounter.googleplus url
-29
+2.1.1 :005 > ShareCounter.twitter url
+ => 25042
 ```
