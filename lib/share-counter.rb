@@ -77,19 +77,3 @@ class ShareCounter
   end
 
 end
-
-
-# tests, lol. they all pass.
-
-# url = "http://makeshift.io/"
-# puts ShareCounter.all url
-# puts ShareCounter.selected url, [:linkedin, :facebook]
-
-# puts ShareCounter.linkedin url
-# puts ShareCounter.googleplus url
-# puts ShareCounter.twitter url
-# puts ShareCounter.facebook url
-# puts ShareCounter.reddit url
-# puts ShareCounter.delicious url
-# puts ShareCounter.stumbleupon url
-# puts ShareCounter.pinterest url
