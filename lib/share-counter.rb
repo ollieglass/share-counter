@@ -44,7 +44,7 @@ class ShareCounter
     if json.empty?
       return -1
     else
-      return JSON.parse(html)[0]['total_posts']
+      return json[0]['total_posts']
     end
   end
 
