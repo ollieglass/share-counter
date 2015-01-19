@@ -77,3 +77,4 @@ class ShareCounter
   end
 
 end
+
