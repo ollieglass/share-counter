@@ -10,3 +10,4 @@ describe ShareCounter do
     end
   end
 end
+
