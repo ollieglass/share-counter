@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.email       = 'ollieglaskovik@gmail.com'
   s.homepage    = 'http://rubygems.org/gems/share-counter'
 
-  s.files       = ["lib/share-counter.rb", "lib/share-counter/common.rb"]
+  s.files       = ["lib/share-counter.rb"]
 
   s.add_runtime_dependency 'nokogiri', '~> 1.6'
   s.add_runtime_dependency 'rest-client', ['~> 1.6']
