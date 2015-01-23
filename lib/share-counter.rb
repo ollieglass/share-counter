@@ -2,6 +2,7 @@ require 'nokogiri'
 require 'open-uri'
 require 'json'
 require 'rest-client'
+require 'digest/md5'
 
 class ShareCounter
 
@@ -39,13 +40,9 @@ class ShareCounter
   end
 
   def self.delicious url
-    html = make_request "http://feeds.delicious.com/v2/json/urlinfo/data", url: url
-    json = JSON.parse(html)
-    if json.empty?
-      return -1
-    else
-      return json[0]['total_posts']
-    end
+    url_digest = Digest::MD5.hexdigest(url)
+    html = make_request "https://avosapi.delicious.com/api/v1/posts/md5/#{url_digest}"
+    JSON.parse(html)["pkg"][0]["num_saves"].to_i rescue 0
   end
 
   def self.stumbleupon url
@@ -107,6 +104,7 @@ class ShareCounter
       puts "Failed #{attempts} attempt(s) - #{e}"
       attempts += 1
       if attempts <= 3
+        sleep 2
         retry
       else
         raise Exception
