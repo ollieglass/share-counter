@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name        = 'share-counter'
   s.license     = 'MIT'
 
-  s.version     = '0.0.8'
+  s.version     = '0.0.9'
   s.date        = '2015-12-15'
 
   s.summary     = "ShareCounter"
