@@ -2,6 +2,7 @@
 [![Code Climate](https://codeclimate.com/github/ollieglass/share-counter/badges/gpa.svg)](https://codeclimate.com/github/ollieglass/share-counter)
 [![Test Coverage](https://codeclimate.com/github/ollieglass/share-counter/badges/coverage.svg)](https://codeclimate.com/github/ollieglass/share-counter)
 [![Build Status](https://travis-ci.org/ollieglass/share-counter.svg?branch=master)](https://travis-ci.org/ollieglass/share-counter)
+[![Dependency Status](https://gemnasium.com/ollieglass/share-counter.svg)](https://gemnasium.com/ollieglass/share-counter)
 
 # ShareCounter
 
