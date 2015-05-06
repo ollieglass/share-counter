@@ -100,14 +100,14 @@ class ShareCounter
         ? response.gsub(/\A\/\*\*\/\s+/, "").gsub(/^(.*);+\n*$/, "\\1").gsub(/^#{params[:callback]}\((.*)\)$/, "\\1") \
         : response
 
-    rescue Exception => e
+    rescue => e
       puts "Failed #{attempts} attempt(s) - #{e}"
       attempts += 1
       if attempts <= 3
         sleep 2
         retry
       else
-        raise Exception
+        raise e
       end
     end
 
@@ -116,4 +116,3 @@ class ShareCounter
 
 
 end
-
