@@ -107,7 +107,7 @@ class ShareCounter
         sleep 2
         retry
       else
-        raise Exception
+        raise e
       end
     end
 
