@@ -43,8 +43,6 @@ gem install share-counter
 2.1.1 :003 > counts = ShareCounter.all url
  => {:reddit=>9, :twitter=>26329, :facebook=>{:commentsbox_count=>0, :click_count=>3870, :total_count=>73322, :comment_count=>13597, :like_count=>39899, :share_count=>19826}, :linkedin=>154, :googleplus=>2, :delicious=>5, :stumbleupon=>2087, :pinterest=>0}
 
-# note delicious count. -1 means an error prevented the count being retrieved
-
 # get specific networks
 2.1.1 :004 > counts = ShareCounter.selected url, [:twitter, :linkedin]
  => {:twitter=>26329, :linkedin=>154}
