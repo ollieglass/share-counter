@@ -26,7 +26,7 @@ class ShareCounter
 
   def self.facebook url
     html = make_request "https://api.facebook.com/method/fql.query", format: "json", query: "select commentsbox_count, click_count, total_count, comment_count, like_count, share_count from link_stat where url=\"#{url}\""
-    return JSON.parse(html)[0]
+    return JSON.parse(html, symbolize_names: true)[0]
   end
 
   def self.linkedin url
